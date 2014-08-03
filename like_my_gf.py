@@ -36,7 +36,7 @@ def get_auth():
     print "Visit this page and authorize access in your browser:\n", redirect_uri
     code = raw_input('Please type in the access code you got\n')
     OTHER['access_token'], me = unauth_api.exchange_code_for_access_token(code)
-    print me
+
     with open('config', 'w') as cf:
         config_parser.set('Access Token', 'access_token', OTHER['access_token'])
         config_parser.write(cf)
