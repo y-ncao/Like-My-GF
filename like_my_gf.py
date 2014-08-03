@@ -77,7 +77,6 @@ if __name__ == '__main__':
         get_auth()
     liked_media = auth_request()
     logging.info('-'*10+'Liked '+str(len(liked_media))+' medias'+'-'*10)
+
 # TODO
-# 2. Msince this one is exposed to github
-# 4. After a successful like, send email with standard resolution photo.
-# 5. Deploy this whole thing to web server.
+# 1. Send email
