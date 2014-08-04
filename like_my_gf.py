@@ -1,8 +1,8 @@
 #!/usr/bin/env python
+
 from instagram.client import InstagramAPI
 from ConfigParser import SafeConfigParser
 import argparse
-import requests
 import datetime
 import logging
 
@@ -72,11 +72,12 @@ def auth_request():
     return liked_media
 
 if __name__ == '__main__':
-    logging.info('-'*10+str(datetime.datetime.now())+'-'*10)
     if OTHER['access_token'] == 'None':           # Not mistake, but default token is 'None' but not None
         get_auth()
     liked_media = auth_request()
-    logging.info('-'*10+'Liked '+str(len(liked_media))+' medias'+'-'*10)
+    if len(liked_media) > 0:
+        logging.info('-'*10+str(datetime.datetime.now())+'-'*10)
+        logging.info('-'*10+'Liked '+str(len(liked_media))+' medias'+'-'*10)
 
 # TODO
 # 1. Send email
