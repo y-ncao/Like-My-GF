@@ -2,9 +2,9 @@
 This is a auto robot to like my girlfriend's post on Instagram.
 
 ####Why This?
-My girlfriend always complaining that I don't care about what she's doing, I don't like her post on Instagram / Wechat / Weibo ... I don't comment her post bla bla.
+My girlfriend always complaining that I don't care about what she's doing, I don't like her post on Instagram / Wechat / Weibo... and I don't comment her post bla bla.
 
-Being a Programmer, I don't really have much ~~interest~~ time to review every social network. So I build this. Although now she knows that I'm using this to like her post. But she's pretty happy about it(don't ask me why) and never complained again.
+Being a Programmer, I don't really have much ~~interest~~ time to review every social network. So I build this. Although now she knows that I'm using this to like her post. But she's pretty happy about it(don't ask me why) and never complained again. So I'm very happy with this tool.
 
 ####Requires
 * httplib2
@@ -21,4 +21,5 @@ All of these can be installed from pip install
 
 ####To do
 1. Setup email alert everytime robot found a new post, include the photo in the email.
-2. Maybe if anyone else want to use this, I can setup a web api and allow others to register their target. I can setup an engine to do it.
+2. Support more social media. Weibo, Wechat, Facebook...(This gonna be endless)
+3. Maybe if anyone else want to use this, I can setup a web api and allow others to register their target. I can setup an engine to do it.
