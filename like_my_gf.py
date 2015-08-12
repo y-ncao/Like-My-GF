@@ -43,13 +43,18 @@ def get_auth():
 
 def auth_request():
     api = InstagramAPI(access_token=OTHER['access_token'])
-    target_ids = api.user_search(OTHER['target'], 1)
+    target_ids = api.user_search(OTHER['target'])
 
-    if len(target_ids) > 1:
-        logging.error('Found mutiple users, please check username')
-        return
+    target_id = None
+    for search_hit in target_ids:
+        if search_hit.username == OTHER['target']:
+            target_id = search_hit.id
+            break
 
-    target_id = target_ids[0].id
+    if target_id == None:
+        logging.error('Did not find user, please check username')
+        return []
+
     my_name   = api.user().username
     logging.debug('Starting check recent media')
     recent_media, url = api.user_recent_media(user_id=target_id, count = 20)
