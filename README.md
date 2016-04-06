@@ -1,10 +1,10 @@
 ##Like-My-GF
-This is a auto robot to like my girlfriend's post on Instagram.
+This is an auto-robot to like my girlfriend's post on Instagram.
 
 ####Why This?
-My girlfriend always complaining that I don't care about what she's doing, I don't like her post on Instagram / Wechat / Weibo... and I don't comment her post bla bla.
+My girlfriend always complains that I don't care about what she's doing, I don't like her post on Instagram / Wechat / Weibo... and I don't comment on her posts, bla bla bla.
 
-Being a Programmer, I don't really have much ~~interest~~ time to review every social network. So I build this. Although now she knows that I'm using this to like her post. But she's pretty happy about it(don't ask me why) and never complained again. So I'm very happy with this tool.
+Being a programmer, I don't really have much ~~interest~~ time to review every social network. So I build this. Although now she knows that I'm using this to like her post. But she's pretty happy about it (don't ask me why) and never complained again. So I'm very happy with this tool.
 
 ####Requires
 * httplib2
