@@ -1,0 +1,4 @@
+httplib2
+simplejson
+python-instagram
+
